@@ -3,6 +3,17 @@ import style from './App.module.css';
 
 function App() {
 
+  const animals = [
+    "dog", 
+    "cat",
+    "chicken",
+    "butterfly",
+    "cow",
+    "wolf",
+    "sheep",
+    "horse"
+  ]
+
   const [movement, setMovement] = useState('steady')
   const [animate, setAnimation] = useState(false)
   const [animal, setAnimal] = useState('dog')
@@ -10,11 +21,15 @@ function App() {
   const [timeoutId, setTimeoutId] = useState()
 
   const keyMovements = [
-    { key: 87, animal: 'dog', movement: 'up'},
-    { key: 83, animal: 'dog', movement: 'down'},
-    { key: 65, animal: 'dog', movement: 'left'},
-    { key: 68, animal: 'dog', movement: 'right'},
+    { key: 87, animal: animal, movement: 'up'},
+    { key: 83, animal: animal, movement: 'down'},
+    { key: 65, animal: animal, movement: 'left'},
+    { key: 68, animal: animal, movement: 'right'},
   ]
+
+  const changeAnimal = (animal) => {
+    setAnimal(animal)
+  }
 
   const checkMovement = (key) => {
       const move = keyMovements.find(keyMovement => keyMovement.key === key.keyCode) 
@@ -62,6 +77,9 @@ function App() {
 
   return (
     <div className="App">
+      { animals.map((animal, index) => 
+         <button key={index} onClick={() => changeAnimal(animal)}>{ animal }</button>
+      )}
       <h3>{movement}</h3>
       <div className={`${style[animal]} ${style[movement]} ${ animate ? style.move : ''}`}></div>
     </div>
