@@ -1,1 +1,2 @@
-# dog-adventure
+# Dog Adventure 
+## Game made from ReactJS 

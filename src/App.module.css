@@ -1,8 +1,60 @@
+.move {
+  animation: moveX 1s steps(3) infinite; 
+}
+
 .dog {
   background-image: url('./assets/img/dog.png');
   width:32px;
   height:32px;
-  animation: moveX 1s steps(3) infinite;
+}
+
+.cat {
+  background-image: url('./assets/img/cat.png');
+  width:32px;
+  height:32px;
+  /*animation: moveX 1s steps(3) infinite;*/
+}
+
+.chicken {
+  background-image: url('./assets/img/chicken.png');
+  width:32px;
+  height:32px;
+  /*animation: moveX 1s steps(3) infinite;*/
+}
+
+.cow {
+  background-image: url('./assets/img/cow.png');
+  width:32px;
+  height:32px;
+  /*animation: moveX 1s steps(3) infinite;*/
+}
+
+.sheep {
+  background-image: url('./assets/img/sheep.png');
+  width:32px;
+  height:32px;
+  /*animation: moveX 1s steps(3) infinite;*/
+}
+
+.horse {
+  background-image: url('./assets/img/horse.png');
+  width:32px;
+  height:32px;
+  /*animation: moveX 1s steps(3) infinite;*/
+}
+
+.wolf {
+  background-image: url('./assets/img/wolf.png');
+  width:32px;
+  height:32px;
+  /*animation: moveX 1s steps(3) infinite;*/
+}
+
+.butterfly {
+  background-image: url('./assets/img/butterfly.png');
+  width:32px;
+  height:32px;
+  /*animation: moveX 1s steps(3) infinite;*/
 }
 
 .steady {
