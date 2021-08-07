@@ -1,0 +1,35 @@
+.dog {
+  background-image: url('./assets/img/dog.png');
+  width:32px;
+  height:32px;
+  animation: moveX 1s steps(3) infinite;
+}
+
+.steady {
+  background-position-x: -32px;
+}
+
+.down {
+  background-position-y: 0px;
+}
+
+.up {
+  background-position-y: -96px;;
+}
+
+.left {
+  background-position-y: -32px;;
+}
+
+.right {
+  background-position-y: -64px;;
+}
+
+@keyframes moveX {
+ from {
+   background-position-x: 0px;
+ }
+ to {
+   background-position-x: -96px; 
+ } 
+}
